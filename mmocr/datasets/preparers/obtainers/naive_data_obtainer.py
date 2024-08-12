@@ -88,7 +88,7 @@ class NaiveDataObtainer:
                 ' Please manually download the required files'
                 ' following the guides.')
 
-        if url.startswith('magnet'):
+        if url is not None and url.startswith('magnet'):
             raise NotImplementedError('Please use any BitTorrent client to '
                                       'download the following magnet link to '
                                       f'{osp.abspath(dst_path)} and '
