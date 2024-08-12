@@ -52,7 +52,7 @@ class NaiveDataObtainer:
                 self.cache_path,
                 osp.basename(url) if save_name is None else save_name)
             # Download required files
-            if not check_integrity(download_path, md5):
+            if not check_integrity(download_path, md5) and url is not None:
                 self.download(url=url, dst_path=download_path)
             # Extract downloaded zip files to data root
             self.extract(src_path=download_path, dst_path=self.data_root)
