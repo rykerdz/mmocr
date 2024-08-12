@@ -8,13 +8,13 @@ train_preparer = dict(
         cache_path=cache_path,
         files=[
             dict(
-                url='None',
+                url=None,
                 save_name='ic15_textdet_train_img.zip',
                 md5='c51cbace155dcc4d98c8dd19d378f30d',
                 content=['image'],
                 mapping=[['ic15_textdet_train_img', 'textdet_imgs/train']]),
             dict(
-                url='None',
+                url=None,
                 save_name='ic15_textdet_train_gt.zip',
                 md5='3bfaf1988960909014f7987d2343060b',
                 content=['annotation'],
@@ -35,13 +35,13 @@ test_preparer = dict(
         cache_path=cache_path,
         files=[
             dict(
-                url='None',
+                url=None,
                 save_name='ic15_textdet_test_img.zip',
                 md5='97e4c1ddcf074ffcc75feff2b63c35dd',
                 content=['image'],
                 mapping=[['ic15_textdet_test_img', 'textdet_imgs/test']]),
             dict(
-                url='None',
+                url=None,
                 save_name='ic15_textdet_test_gt.zip',
                 md5='8bce173b06d164b98c357b0eb96ef430',
                 content=['annotation'],
